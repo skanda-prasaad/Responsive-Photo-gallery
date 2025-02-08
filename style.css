@@ -91,26 +91,29 @@ html, body {
 
 /* Header */
 header {
-    background-color: #deabab;
+    background-color: #000000;
     text-align: center;
     padding: 1rem;
 }
 
 header h1 {
     font-size: 2rem;
-    background-color: #651d1d;
+    /* background-color: #651d1d; */
     padding: 0.5em;
-    color: white;
+    color: rgb(255, 255, 255);
+    border: 2px solid black;
 }
 
 header p {
     font-size: 1.2rem;
-    padding: 0.3em;
+    padding: 0.4em;
+    padding-top: 0.5em;
+    color: rgb(255, 255, 255);
 }
 
 /* Main Grid Container */
 .container {
-    background-color: #b6a32b;
+    /* background-color: #b6a32b; */
     display: grid;
     grid-template-columns: 1fr; /* Mobile First: Single Column */
     padding: 2em;
@@ -119,7 +122,8 @@ header p {
 
 /* Product Cards */
 .product {
-    background-color: #866767;
+    /* background-color: #866767; */
+    border: 2px solid black;
     padding: 2em;
     min-height: 30vh; /* Allow flexibility */
     text-align: center;
@@ -131,13 +135,13 @@ header p {
     font-size: 1.4rem;
     font-weight: 700;
     padding: 0.3em;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .product p {
     font-size: 1.2rem;
     padding: 0.3em;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 /* Product Images */
@@ -146,20 +150,24 @@ header p {
     max-height: 300px; /* Prevents oversized images */
     object-fit: cover; /* Ensures images scale properly */
     border-radius: 5%;
-    background-color: pink;
+    /* background-color: pink; */
+    border: 1px solid black;
 }
 
 /* Footer */
 footer {
     width: 100%;
-    background-color: yellow;
+    /* background-color: yellow; */
     padding: 1.2em;
     text-align: center;
     font-weight: bold;
+    border: 1px solid black;
+    color: rgb(255, 255, 255);
+    background-color: #000000;
 }
 
 
-@media (min-width: 48em) {
+@media (min-width: 35em) {
     .container {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -168,6 +176,6 @@ footer {
 /* Responsive Grid: Desktop View (3 Columns) */
 @media (min-width: 64em) {
     .container {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
     }
 }
